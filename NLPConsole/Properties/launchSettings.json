@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NLPConsole": {
+      "commandName": "Project",
+      "commandLineArgs": "-s2c 14316195"
+    }
+  }
+}

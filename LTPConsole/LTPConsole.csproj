@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Program</StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE;_USE_CONSOLE;</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE;_USE_CONSOLE;</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\NLPConsole\AttributeCache.cs" Link="AttributeCache.cs" />
+    <Compile Include="..\NLPConsole\AttributeContent.cs" Link="AttributeContent.cs" />
+    <Compile Include="..\NLPConsole\Blankspace.cs" Link="Blankspace.cs" />
+    <Compile Include="..\NLPConsole\ChineseTool.cs" Link="ChineseTool.cs" />
+    <Compile Include="..\NLPConsole\CoreCache.cs" Link="CoreCache.cs" />
+    <Compile Include="..\NLPConsole\CoreContent.cs" Link="CoreContent.cs" />
+    <Compile Include="..\NLPConsole\CoreMatcher.cs" Link="CoreMatcher.cs" />
+    <Compile Include="..\NLPConsole\CoreSegment.cs" Link="CoreSegment.cs" />
+    <Compile Include="..\NLPConsole\CoreSpliter.cs" Link="CoreSpliter.cs" />
+    <Compile Include="..\NLPConsole\CounterCache.cs" Link="CounterCache.cs" />
+    <Compile Include="..\NLPConsole\CounterContent.cs" Link="CounterContent.cs" />
+    <Compile Include="..\NLPConsole\CounterTool.cs" Link="CounterTool.cs" />
+    <Compile Include="..\NLPConsole\DBTool.cs" Link="DBTool.cs" />
+    <Compile Include="..\NLPConsole\DictionaryCache.cs" Link="DictionaryCache.cs" />
+    <Compile Include="..\NLPConsole\DictionaryContent.cs" Link="DictionaryContent.cs" />
+    <Compile Include="..\NLPConsole\FilteredCache.cs" Link="FilteredCache.cs" />
+    <Compile Include="..\NLPConsole\FilteredContent.cs" Link="FilteredContent.cs" />
+    <Compile Include="..\NLPConsole\FilterTool.cs" Link="FilterTool.cs" />
+    <Compile Include="..\NLPConsole\FunctionSegment.cs" Link="FunctionSegment.cs" />
+    <Compile Include="..\NLPConsole\FunctionWord.cs" Link="FunctionWord.cs" />
+    <Compile Include="..\NLPConsole\GammaSpliter.cs" Link="GammaSpliter.cs" />
+    <Compile Include="..\NLPConsole\GammaTool.cs" Link="GammaTool.cs" />
+    <Compile Include="..\NLPConsole\Grammar.cs" Link="Grammar.cs" />
+    <Compile Include="..\NLPConsole\GrammarAttribute.cs" Link="GrammarAttribute.cs" />
+    <Compile Include="..\NLPConsole\LimitedConcurrencyLevelTaskScheduler.cs" Link="LimitedConcurrencyLevelTaskScheduler.cs" />
+    <Compile Include="..\NLPConsole\LogTool.cs" Link="LogTool.cs" />
+    <Compile Include="..\NLPConsole\MiscTool.cs" Link="MiscTool.cs" />
+    <Compile Include="..\NLPConsole\OperationLog.cs" Link="OperationLog.cs" />
+    <Compile Include="..\NLPConsole\PunctuationTool.cs" Link="PunctuationTool.cs" />
+    <Compile Include="..\NLPConsole\Quantity.cs" Link="Quantity.cs" />
+    <Compile Include="..\NLPConsole\RawContent.cs" Link="RawContent.cs" />
+    <Compile Include="..\NLPConsole\ShortCache.cs" Link="ShortCache.cs" />
+    <Compile Include="..\NLPConsole\ShortContent.cs" Link="ShortContent.cs" />
+    <Compile Include="..\NLPConsole\SingleWord.cs" Link="SingleWord.cs" />
+    <Compile Include="..\NLPConsole\Token.cs" Link="Token.cs" />
+    <Compile Include="..\NLPConsole\TokenCache.cs" Link="TokenCache.cs" />
+    <Compile Include="..\NLPConsole\TokenContent.cs" Link="TokenContent.cs" />
+    <Compile Include="..\NLPConsole\WordType.cs" Link="WordType.cs" />
+    <Compile Include="..\NLPConsole\XMLTool.cs" Link="XMLTool.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+</Project>
